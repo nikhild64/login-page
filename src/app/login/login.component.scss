@@ -13,9 +13,9 @@ $primary-text-color:#12005e;
 
       padding-top: 40px;
       margin: 0 auto;
-      border: 0.5px solid #d500f9;
+      border: 0.5px thick #d500f9;
       border-radius: 20px;
-      height: 70%;
+      height: max-content;
       width: 60%;
       box-shadow: 20px 20px 20px 1px #ab47bc;
       h3 {
@@ -70,10 +70,12 @@ $primary-text-color:#12005e;
 
 @media only screen and (max-width: 600px) {
   .container {
+
     .box {
+
       .content {
-        height: 70%;
-        width: 80%;
+        height: max-content;
+        width: 90%;
         .sign-up{
           p{
             text-align: end ;

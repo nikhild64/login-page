@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class LoginComponent {
 
-  @Input() websiteName:string|undefined;
+  @Input() websiteName:string|undefined = "Website";
   activity='Login'
 
 

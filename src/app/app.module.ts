@@ -3,18 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { InputWithLabelComponent } from './login/input-with-label/input-with-label.component';
+import { LoginModule } from './login/login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    InputWithLabelComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
