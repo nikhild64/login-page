@@ -1,36 +1,37 @@
-.label-input{
-padding: 10px;
+.label-input {
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  input{
-
+  label {
+    font-size: 1.2rem;
+  }
+  input {
     height: 2rem;
-
-    border: 1px solid grey;
+    border: 1px solid #aa00ff;
     outline: none;
+    font-size: 1.2rem;
+
+    border-radius: 10px;
   }
 }
 
-
-@media only screen and (max-width: 600px){
-  .label-input{
+@media only screen and (max-width: 600px) {
+  .label-input {
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
 
-padding: 0px;
+    padding: 0px;
 
-
-    input{
+    input {
       height: 3rem;
       margin-top: 10px;
 
       margin-bottom: 15px;
-      border-radius: 5%;
+      border-radius: 5px;
       font-size: 2rem;
     }
   }
-
 }

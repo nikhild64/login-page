@@ -1,51 +1,71 @@
-.container{
-margin-top: 10vh;
-  .box{
-    .content{
-      margin-top: 40px;
-    }
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e1bee7;
 
-    margin: 0 auto;
-    border: .5px solid grey;
-    border-radius: 5%;
-    height: 50vh;
-    width: 50vw;
-    box-shadow: 8px 8px 11px 0px grey;
-    h3{
-     text-align: center;
-    }
-    app-input-with-label{
-      display: flex;
-      flex-direction: column;
-      margin: 10px;
-    }
-    .login-button{
-      display: grid;
-      justify-items: center;
-    }
-    .login-button>input[type="button"]{
-      height: 2rem;
-      width: 50%;
-      margin: 20px;
-      background-color: transparent;
-      border-width: 1px;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
+  .box {
+    padding-top: 10vh;
 
+    height: 100vh;
+    .content {
+      background-color: #f3e5f5;
+
+      padding-top: 40px;
+      margin: 0 auto;
+      border: 0.5px solid #d500f9;
+      border-radius: 20px;
+      height: 55vh;
+      width: 50vw;
+      box-shadow: 8px 8px 11px 0px #ab47bc;
+      h3 {
+        text-align: center;
+        font-family: "Maven Pro", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-shadow: 6px 4px 20px #7b1fa2;
+        color: #12005e;
+      }
+      app-input-with-label {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+      .login-button {
+        color: white;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 30px;
+        div.material-icons {
+          padding: 8px;
+          position: absolute;
+          height: 100%;
+          padding-left: 30px;
+        }
+      }
+      .login-button > input[type="button"] {
+        color: white;
+        height: 2.5rem;
+        width: 100%;
+        background-color: #ab47bc;
+        border-width: 1px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        border-color: #9c27b0;
+      }
+    }
   }
-
 }
 
-@media only screen and (max-width: 600px){
-  .container{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-      .box{
-
+@media only screen and (max-width: 600px) {
+  .container {
+    .box {
+      .content {
         height: 60vh;
         width: 80vw;
-          }
-
+      }
     }
+  }
 }
