@@ -1,21 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   @Input() websiteName:string|undefined;
   activity='Login'
-  constructor() { }
 
-  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
-  ngOnInit(): void {
 
-  }
-  switchMode(){
+  switchMode() : void{
     this.activity=this.activity==='Login'?'Signup':'Login';
   }
 

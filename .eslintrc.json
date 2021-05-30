@@ -1,7 +1,9 @@
 {
   "root": true,
   "ignorePatterns": [
-    "projects/**/*"
+    "projects/**/*",
+    "*.spec.ts",
+    "test.ts"
   ],
   "overrides": [
     {
@@ -17,7 +19,9 @@
       },
       "extends": [
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@typescript-eslint/recommended",
+        "eslint:recommended"
       ],
       "rules": {
         "@angular-eslint/directive-selector": [
