@@ -8,9 +8,14 @@
       <div class="login-button">
         <div class="material-icons md-36" >login</div>
 
-        <input type="button" value="Login">
+        <input type="button" [value]="activity">
 
 
+      </div>
+      <div class="sign-up" (click)="switchMode()" >
+        <p>
+          {{activity==='Login'?'Sign Up?':'Login?'}}
+        </p>
       </div>
     </div>
 

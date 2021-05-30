@@ -1,3 +1,4 @@
+$primary-text-color:#12005e;
 .container {
   height: 100vh;
   width: 100vw;
@@ -23,7 +24,7 @@
         font-size: 2rem;
         margin-bottom: 20px;
         text-shadow: 6px 4px 20px #7b1fa2;
-        color: #12005e;
+        color: $primary-text-color;
       }
       app-input-with-label {
         display: flex;
@@ -54,6 +55,14 @@
         padding: 5px;
         border-radius: 10px;
         border-color: #9c27b0;
+      }
+      .sign-up{
+        p{
+          text-align: end ;
+          cursor: pointer;
+          padding: 10px;
+          color: $primary-text-color;
+        }
       }
     }
   }
