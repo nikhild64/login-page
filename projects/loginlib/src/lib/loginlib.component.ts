@@ -12,6 +12,10 @@ export class LoginlibComponent  {
 
   @Input() websiteName:string|undefined = "Website";
   @Output() loginDetails = new EventEmitter();
+
+  @Input() disableSignup = false;
+  username='';
+  password='';
   activity='Login'
 
 
@@ -20,8 +24,12 @@ export class LoginlibComponent  {
   }
 
   submitDone() : void{
+    if(!(this.password==='' && this.username==='')){
+      this.loginDetails.next({'loginMode':this.activity,'userName':this.username,'password':this.password});
 
-    this.loginDetails.next({'loginMode':this.activity});
+    }
+
   }
 
 }
+

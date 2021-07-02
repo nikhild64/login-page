@@ -1,6 +1,21 @@
 # Loginlib
 
+
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+
+To use this, below are inputs you can use:
+
+websiteName : string => Name to be shown on the login page
+disableSignup : boolean  => to show sign up switch button
+
+you will get the details when user click login/signup button as an event you can listen to it using property (loginDetails)
+the details will be in format 
+{'loginMode':this.activity,'userName':this.username,'password':this.password}
+
+Using this you can validate the details by yourself, the basic validation is put in place it will not send details when the inputs are blank.
+
+More features on the way
 
 ## Code scaffolding
 
