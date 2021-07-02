@@ -8,6 +8,8 @@ To use this, below are inputs you can use:
 
 websiteName : string => Name to be shown on the login page
 disableSignup : boolean  => to show sign up switch button
+primaryColor : main background color Default is #60c6f1
+secondaryColor : secondary color used for login container background color  Default is #ffde59
 
 you will get the details when user click login/signup button as an event you can listen to it using property (loginDetails)
 the details will be in format 

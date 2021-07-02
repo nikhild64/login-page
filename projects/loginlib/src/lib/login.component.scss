@@ -8,34 +8,39 @@ html,body{
   height: 100%;
   width: 100%;
 }
-
-
+:root {
+  --primary-color: #60c6f1;
+  --secondary-color: #ffde59;
+}
+//#60c6f1
 $primary-text-color:#12005e;
+$primary-background-color:var(--primary-color);
+$primary-color:var(--secondary-color);
 .container {
   height: 100%;
   width: 100%;
-  background-color: #60c6f1;
+  background-color: $primary-background-color;
 
   .box {
     padding-top: 5rem;
 
     height: 100%;
     .content {
-      background-color: #ffde59;
+      background-color: $primary-color;
 
       padding-top: 40px;
       margin: 0 auto;
-      border: 0.5px thick #60c6f1;
+      border: 0.5px thick $primary-background-color;
       border-radius: 20px;
       height: max-content;
       width: 60%;
-      box-shadow: 20px 20px 20px 1px #60c6f1;
+      box-shadow: 20px 20px 20px 1px $primary-background-color;
       h3 {
         text-align: center;
         font-family: "Maven Pro", sans-serif;
         font-size: 2rem;
         margin-bottom: 20px;
-        text-shadow: 6px 4px 20px #60c6f1;
+        text-shadow: 6px 4px 20px $primary-background-color;
         color: $primary-text-color;
       }
       app-input-with-label {
@@ -60,13 +65,13 @@ $primary-text-color:#12005e;
         color: black;
         height: 2.5rem;
         width: 100%;
-        background-color: #60c6f1;
+        background-color: $primary-background-color;
         border-width: 1px;
         font-size: 1.5rem;
         cursor: pointer;
         padding: 5px;
         border-radius: 10px;
-        border-color: #60c6f1;
+        border-color: $primary-background-color;
 
         margin-bottom: 20px;
       }
