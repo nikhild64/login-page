@@ -9,7 +9,7 @@ jobs:
         with:
           node-version: 14
       - run: npm install
-      - run: ng build loginlib
+      - run: npm ng build loginlib
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: b699f3ea-f08b-4c99-873c-1d22c064d839
