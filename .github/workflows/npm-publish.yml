@@ -19,4 +19,4 @@ jobs:
       - run: npm run ng build loginlib
       - run: npm publish dist/loginlib --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN_NEW}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
