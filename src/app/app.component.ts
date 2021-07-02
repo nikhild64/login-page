@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'login-page';
   websiteName="MyPortfolio"
+
+  userAction($event:any): void{
+
+
+    console.log($event);
+  }
 }
