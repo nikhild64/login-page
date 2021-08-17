@@ -5,6 +5,8 @@
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
 To use this, below are inputs you can use:
+Import the Lib Module in you application module using : LoginlibModule
+to use this in your component <lib-loginlib></lib-loginlib>
 
 websiteName : string => Name to be shown on the login page
 disableSignup : boolean  => to show sign up switch button
