@@ -1,0 +1,50 @@
+<div class="nk-login-wrapper">
+  <div class="nk-login-card">
+    <div class="nk-login-header">
+      <h2 class="nk-login-title">{{ websiteName }}</h2>
+      <p class="nk-login-subtitle">Sign in to your account</p>
+    </div>
+
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="nk-login-form">
+      <div class="nk-form-group">
+        <label for="userName" class="nk-label">Email / Username</label>
+        <input
+          id="userName"
+          name="userName"
+          type="text"
+          class="nk-input"
+          placeholder="Enter your email"
+          [(ngModel)]="userName"
+          required
+          #userNameRef="ngModel"
+        />
+        <span class="nk-error" *ngIf="userNameRef.invalid && userNameRef.touched">
+          Username is required.
+        </span>
+      </div>
+
+      <div class="nk-form-group">
+        <label for="password" class="nk-label">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          class="nk-input"
+          placeholder="Enter your password"
+          [(ngModel)]="password"
+          required
+          #passwordRef="ngModel"
+        />
+        <span class="nk-error" *ngIf="passwordRef.invalid && passwordRef.touched">
+          Password is required.
+        </span>
+      </div>
+
+      <span class="nk-error" *ngIf="errorMessage">{{ errorMessage }}</span>
+
+      <button type="submit" class="nk-btn-primary" [disabled]="isLoading">
+        {{ isLoading ? 'Signing in...' : 'Sign In' }}
+      </button>
+    </form>
+  </div>
+</div>
